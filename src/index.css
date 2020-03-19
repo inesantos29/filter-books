@@ -1,5 +1,29 @@
 body {
-    background-color: #54a0ff;
-    color: #341f97;
-    font-weight: 100;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
 }
+p {
+    font-size: 20px;
+}
+p.small {
+    font-size: 16px;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #774ebd;
+    outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+

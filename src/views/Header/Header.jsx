@@ -1,5 +1,5 @@
 import React from 'react';
-import {Hero} from './style';
+import {Hero} from "./style";
 
 const Header = ({title}) => (
   <Hero>
@@ -13,7 +13,7 @@ const Header = ({title}) => (
           />
           <div className="intro-text">
             <span className="name">{title}</span>
-            <hr className="star-light" />
+            <hr className="line" />
             <span className="skills">Thinking in React exercise</span>
           </div>
         </div>
