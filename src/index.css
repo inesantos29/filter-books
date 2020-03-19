@@ -1,13 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    overflow-x: hidden;
 }
+
+
 p {
     font-size: 20px;
 }
+
 p.small {
-    font-size: 16px;
+    font-size: 15px;
 }
+
 a,
 a:hover,
 a:focus,
@@ -16,6 +26,7 @@ a.active {
     color: #774ebd;
     outline: none;
 }
+
 h1,
 h2,
 h3,
@@ -27,3 +38,28 @@ h6 {
     font-weight: 700;
 }
 
+hr.line-light, hr.line-dark {
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+
+hr.line-light {
+    border: 3px solid #ffffff;
+}
+
+hr.line-dark {
+    border: 3px solid #2c3e50;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  margin: 0;
+  font-size: 3em;
+}
+
+#books .book-list div[class*="col"] {
+  padding-top: 20px;
+}

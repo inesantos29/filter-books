@@ -33,12 +33,6 @@ export const Hero = styled.header`
       font-weight: 300;
    }
  }
-  
-  hr.line {
-    max-width: 250px;
-    margin: 25px auto 30px;
-    border: 2px solid #ffffff;
-  }
 
   @media (min-width: 768px) {
     .container {

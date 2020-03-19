@@ -1,8 +1,7 @@
 import React from 'react';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./Header/Header";
-
+import Books from "./Books/Books";
 
 /*const HomeStyle = {
   display: 'flex',
@@ -21,8 +20,11 @@ const Home = ({ match }) => (
        </p>
      )}
    </div>*/
+  <>
+    <Header title={"ReactJS"}/>
+    <Books/>
 
-  <Header title="ReactJS"/>
+  </>
 );
 
 export default Home;

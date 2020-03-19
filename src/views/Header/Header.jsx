@@ -13,7 +13,7 @@ const Header = ({title}) => (
           />
           <div className="intro-text">
             <span className="name">{title}</span>
-            <hr className="line" />
+            <hr className="line-light" />
             <span className="skills">Thinking in React exercise</span>
           </div>
         </div>
