@@ -1,7 +1,8 @@
 import React from 'react';
 
-import Header from "./Header/Header";
-import Books from "./Books/Books";
+import Navbar from './Navbar/Navbar';
+import Header from './Header/Header';
+import Books from './Books/Books';
 
 /*const HomeStyle = {
   display: 'flex',
@@ -21,6 +22,7 @@ const Home = ({ match }) => (
      )}
    </div>*/
   <>
+    <Navbar/>
     <Header title={"ReactJS"}/>
     <Books/>
 
