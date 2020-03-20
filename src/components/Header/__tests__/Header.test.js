@@ -1,12 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Home from '../views/Home';
+import Header from '../Header';
 
-describe('<Home />', () => {
+describe('<Header />', () => {
   describe('renders', () => {
     it('without crashing', () => {
-      shallow(<Home />);
+      shallow(<Header />);
     });
   });
 });

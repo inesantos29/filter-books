@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Navbar from './Navbar/Navbar';
-import Header from './Header/Header';
-import Books from './Books/Books';
-import Footer from './Footer/Footer';
+import Navbar from '../Navbar/Navbar';
+import Header from '../Header/Header';
+import Books from '../Books/Books';
+import Footer from '../Footer/Footer';
 
 const Home = ({ match }) => (
   <>

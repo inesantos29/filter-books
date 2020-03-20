@@ -7,8 +7,8 @@ const Navbar = () => (
       <div className="container">
         <div className="navbar-header">
           <a className="navbar-brand" href="https://reactjs.academy">
-            <img src="https://swiftcodeninja.com/ninja.png" className="mr-2" width="50" height="50" alt=""/>
-            CatanaJs 
+            <img src="https://swiftcodeninja.com/ninja.png" className="mr-2" width="50" height="50" alt="ninja" />
+            CatanaJs
           </a>
         </div>
       </div>
