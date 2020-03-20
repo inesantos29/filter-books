@@ -1,30 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
+  
 p {
     font-size: 20px;
 }
 
 p.small {
     font-size: 15px;
-}
-
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-    color: #774ebd;
-    outline: none;
 }
 
 h1,
@@ -60,6 +52,3 @@ section h2 {
   font-size: 3em;
 }
 
-#books .book-list div[class*="col"] {
-  padding-top: 20px;
-}

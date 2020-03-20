@@ -52,13 +52,14 @@ function Books() {
           </div>
         </div>
 
-        {error && <div>Something went wrong ...</div>}
+        {error && <div>Something went wrong...</div>}
 
         {loading ? (
           <p>Loading books...</p>
         ) : (
           <BookList books={filteredBooks}/>
         )}
+        
       </div>
     </section> 
   )
