@@ -47,4 +47,3 @@ export const Nav = styled.div`
     }
   }
 `;
-

@@ -10,9 +10,3 @@ describe('<Navbar />', () => {
     });
   });
 });
-
-it('render h2 correctly', () => {
-  const { getByText } = render(<CardList />);
-  const textElement = getByText(/Our latest news/i);
-  expect(textElement).toBeInTheDocument();
-});

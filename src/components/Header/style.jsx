@@ -50,4 +50,3 @@ export const Hero = styled.header`
     }
   }
 `;
-

@@ -1,8 +1,7 @@
 import React from 'react';
-import {CopyRight} from './style';
+import { CopyRight } from './style';
 
 const Footer = () => (
-
   <CopyRight>
     <footer className="text-center">
       <div className="footer">

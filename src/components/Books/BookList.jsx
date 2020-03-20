@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const BookList = ({books}) => (
+const BookList = ({ books }) => (
   <div className="row book-list">
-    {books.map((book,index) => (
+    {books.map((book, index) => (
       <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
         <div className="card mb-4" style={{ minHeight: '465px' }}>
           <img src={book.cover} className="card-img-top" alt="book-cover" />
@@ -27,5 +28,9 @@ const BookList = ({books}) => (
     ))}
   </div>
 );
+
+BookList.propTypes = {
+  books: PropTypes.array.isRequired,
+};
 
 export default BookList;
