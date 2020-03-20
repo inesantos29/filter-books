@@ -10,20 +10,24 @@ function Books() {
 
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const [search, setSearch] = useState('');
   const [filteredBooks, setFilteredBooks] = useState([]);
  
   useEffect(() => {
-    setLoading(true);
-    axios
-      .get(REACT_APP_API_URL)
-      .then(res => {
+    const fetchData = async () => {
+      setError(false);
+      setLoading(true);
+      try {
+        const res = await 
+        axios.get(REACT_APP_API_URL);
         setBooks(res.data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.log(err);
-      });
+      } catch (error) {
+        setError(true);
+      }
+      setLoading(false);
+    };
+    fetchData();
   }, []);
 
   
@@ -35,10 +39,6 @@ function Books() {
     );
   }, [search, books]);
 
-  if (loading) {
-    return <p>Loading books...</p>;
-  }
-  
   return (
     <section id="books">
       <div className="container">
@@ -51,7 +51,14 @@ function Books() {
             />
           </div>
         </div>
-        <BookList books={filteredBooks}/>
+
+        {error && <div>Something went wrong ...</div>}
+
+        {loading ? (
+          <p>Loading books...</p>
+        ) : (
+          <BookList books={filteredBooks}/>
+        )}
       </div>
     </section> 
   )
