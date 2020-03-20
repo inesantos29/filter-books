@@ -34,7 +34,8 @@ function Books() {
   useEffect(() => {
     setFilteredBooks(
       books.filter(book =>
-        book.name.toLowerCase().includes(search.toLowerCase())
+        book.name.toLowerCase().includes(search.toLowerCase()) ||
+        book.author.toLowerCase().includes(search.toLowerCase())
       )
     );
   }, [search, books]);
